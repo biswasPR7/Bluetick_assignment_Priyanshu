@@ -1,22 +1,70 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { faBuilding, faHandshake,faGears,faRobot } from "@fortawesome/free-solid-svg-icons";
 function About() {
   return (
     <div className="about" id="about_id">
-      <h1 style={{ color: "yellow" }}>A breif introduction about myself</h1>
-      <p >
-        Hello everyone, I'm Priyanshu biswas a Mathematics and Scientific
-        Computing undergrad student at IIT Kanpur currently in my 6th semester. Few
-        relevant coursework covered by me tillnow are Data Structure and Algorithms ,
-        Probability and Statistics , Numerical Analysis And Scientific
-        Computing , Elementary stochastic processes , and Linear Algebra. My skill
-        set encompasses a broad array of languages :
-        <p style={{color: "orange"}}>HTML, CSS, JavaScript, C++,SQL</p> I am comfortable with working with following Frontend frameworks  <p style={{color: "orange"}}> React,Tailwind CSS.</p> With a solid
-        foundation in DSA, I excel at problem-solving and optimization.
-        Currently i am Seeking internships in web development/software
-        development to acquire new skills and gain hands-on experience with
-        real-world projects.
-      </p>
+      <div className="cards">
+        <header style={{  fontWeight: "bold" }}>
+          <FontAwesomeIcon
+            icon={faBuilding}
+            size="2x"
+            style={{ marginTop: "15px", marginBottom: "15px" }}
+          />
+          <p>  AI Opportunities for Your Enterprise</p>
+        </header>
+        <main style={{  marginTop: "40%" }}>
+          Unlock the potential of generative AI by identifying tailored
+          opportunities for integration within your organization, ensuring a
+          strategic and efficient approach to AI implementation.
+        </main>
+      </div>
+      <div className="cards">
+        <header style={{  fontWeight: "bold" }}>
+          <FontAwesomeIcon
+            icon={faHandshake}
+            size="2x"
+            style={{ marginTop: "20px", marginBottom: "10px" }}
+          />
+          <p> Design AI Trust Layer</p>
+        </header>
+        <main style={{  marginTop: "40%" }}>
+          Prioritize data security and build trust in generative AI applications
+          with a dedicated trust layer, emphasizing privacy-focused solutions
+          that safeguard both organizational and customer data.
+        </main>
+      </div>
+      <div className="cards">
+        <header style={{  fontWeight: "bold" }}>
+          <FontAwesomeIcon
+            icon={faGears }
+            size="2x"
+            style={{ marginTop: "20px", marginBottom: "10px" }}
+          />
+          <p> Scalability-Focused Solutions</p>
+        </header>
+        <main style={{  marginTop: "40%" }}>
+          Streamline and optimize business processes with comprehensive workflow
+          automation, ensuring seamless integration of AI technologies from
+          inception to execution for increased efficiency and productivity.
+        </main>
+      </div>
+      <div className="cards">
+        <header style={{  fontWeight: "bold" }}>
+          <FontAwesomeIcon
+            icon={faRobot}
+            size="2x"
+            style={{ marginTop: "20px", marginBottom: "10px" }}
+          />
+          <p> Scalable Solutions</p>
+        </header>
+        <main style={{  marginTop: "40%" }}>
+          Streamline and optimize business processes with comprehensive workflow
+          automation, ensuring seamless integration of AI technologies from
+          inception to execution for increased efficiency and productivity.
+        </main>
+      </div>
     </div>
   );
 }

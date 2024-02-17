@@ -1,12 +1,13 @@
 import React from "react";
+import logo_pic from "./logo@bluetick.png";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap,faUser,faCode,faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faUser,faNewspaper,faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Nav() {
   return (
     <header>
       <nav>
-        <div className="left">Priyanshu's Portfolio</div>
+      <div className="left"> <img  src={logo_pic } alt="pic" /></div>
         <div className="right">
           <ul className="navItems">
             <li>
@@ -18,23 +19,16 @@ function Nav() {
 
            
             <li>
-            <Link to="projects_id" smooth={true}>
-            <FontAwesomeIcon icon={faCode} />
-              <div>Projects</div>
+            <Link to="blogs_id" smooth={true}>
+            <FontAwesomeIcon icon={faNewspaper} />
+              <div>Blogs</div>
               </Link>
             </li>
-            <li>
-              {" "}
-              <Link to="edu_id" smooth={true}>
-                {" "}
-                <FontAwesomeIcon icon={faGraduationCap} />
-                <div>Education</div>
-              </Link>
-            </li>
+            
             <li>
             <Link to="contact_id" smooth={true}>
             <FontAwesomeIcon icon={faEnvelope } />
-             <div>Contact me</div> 
+             <div>Contact us</div> 
              </Link>
               </li>
           </ul>

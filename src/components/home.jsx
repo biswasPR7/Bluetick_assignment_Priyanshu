@@ -1,47 +1,48 @@
 import React from "react";
 
-import new_photo from "./cool pic.png";
-import {useTypewriter} from "react-simple-typewriter";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin,faGithub } from "@fortawesome/free-brands-svg-icons";
+
+import { useTypewriter } from "react-simple-typewriter";
+
+import sidepic from "./bgIMG.png";
 
 function Home() {
-  const[typeEffect]= useTypewriter({
-    words: ["Priyanshu"],
-    loop:{},
+  const [typeEffect] = useTypewriter({
+    words: ["Transforming Enterprises"],
+    loop: {},
     typeSpeed: 100,
-    deleteSpeed: 40
-  })
+    deleteSpeed: 40,
+  });
   return (
     <div className="home">
       <div>
-        <h1 style={{lineHeight:1.6}}>Hi everyone 👋 </h1>
         <div>
-
-        <h1 style={{lineHeight:1.6}}>myself</h1>
-        <h1 style={{lineHeight:1.6,color: "white"}}>{typeEffect}</h1>
+          <h1 style={{ lineHeight: 1.9, color: "blue" }}>{typeEffect}</h1>
+          <h2>
+            <p>with cutting-edge, scalable,</p> <p>privacy-focused Generative AI </p><p>Solutions</p>
+          </h2>
         </div>
-         <div style={{color:"white"}}>
-          <a href="https://www.linkedin.com/in/priyanshu-biswas-aa133028a/">
-        <FontAwesomeIcon icon={faLinkedin} size="2x" />
-        </a>
-       
-        {" "}
-          <a href="https://github.com/biswasPR7">
-        <FontAwesomeIcon icon={faGithub} size="2x" />
-        </a>
+        <div style={{  marginTop: "10%" ,marginBottom:"10%"}}>
+          <p>
+            Founded in 2017, Bluetick Consultants is a technology-driven firm
+            that has made a significant impact in the Indian and US startup
+            ecosystems.
+          </p>
         </div>
-        
+        <button style={{marginLeft: "30px"}}>
+          <a
+            href="https://www.bluetickconsultants.com/generative-ai.html"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            know more{" "}
+          </a>
+        </button>
       </div>
 
       <div>
-        <img id="photo" src={new_photo} alt="coder" />
+        <img id="photo" src={sidepic} alt="coder" />
       </div>
-      
     </div>
   );
-
 }
-
 
 export default Home;
